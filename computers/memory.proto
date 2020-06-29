@@ -9,6 +9,7 @@ message Memory {
     UNKNOWN = 0;
     BYTE = 1;
     MEGABYTE = 2;
+    TERABYTE = 3;
   }
   int32 value = 1;
   Unit unit = 2;

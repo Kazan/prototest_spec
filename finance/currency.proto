@@ -1,5 +1,9 @@
 syntax = "proto3";
 
+package finance;
+
+option go_package = ".;finance";
+
 service Currency { rpc GetRate(RateRequest) returns (RateResponse); }
 
 message RateRequest {
