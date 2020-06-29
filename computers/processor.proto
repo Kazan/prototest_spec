@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package computers;
+
+option go_package = ".;computers";
+
+import "computers/memory.proto";
+import "google/protobuf/timestamp.proto";
+
+message CPU {
+  string brand = 1;
+  string name = 2;
+  google.protobuf.Timestamp updated_at = 3;
+}
+
+message GPU {
+  string brand = 1;
+  string name = 2;
+  Memory memory = 3;
+}

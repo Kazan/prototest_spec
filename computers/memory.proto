@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package computers;
+
+option go_package = ".;computers";
+
+message Memory {
+  enum Unit {
+    UNKNOWN = 0;
+    BYTE = 1;
+    MEGABYTE = 2;
+  }
+  int32 value = 1;
+  Unit unit = 2;
+}
